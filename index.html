@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <style>
+        .style{
+            font-weight: bolder;
+        }
+        .list{
+            
+            margin: 30px;
+            border: 1px solid black;
+            font-size: larger;
+            width: 400px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="input1">
+        <button onclick="Submit()">add</button>
+        <button onclick="bold()"> bold</button>
+        <div class="list">
+            list : <ul id="list"></ul>
+        </div>
+    </div>
+
+    <script>
+        function Submit(){
+        const list = document.getElementById("list");
+        const li = document.createElement("li");
+        li.innerText = document.getElementById('input1').value;
+        list.appendChild(li);
+        document.getElementById('input1').value = " ";
+    }
+    function bold(){
+        if(list.classList.length=== 0){
+        list.classList.add("style")
+        }else{
+            list.classList.remove('style');
+        }
+    }
+    </script>
+</body>
+</html>
