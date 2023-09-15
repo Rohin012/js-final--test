@@ -1,0 +1,25 @@
+1. function is a block of code we can store it and call/evoke it after we need, also reuse it.
+2. when we hv to repeat the same condition number of times that time we use loop.
+let result = "0";
+for(i=0; i<10; i++){
+    result += i ;
+} 
+console log(result);
+3. variable is one type of container we store value inside it and use with the variable name.
+4. javascript has 7 primitive data types and 1 special data type total 8 data type
+    object - special data type
+    Boolean
+    Bigint
+    null
+    undefind
+    string
+    number
+    symbol
+5. when we hv 2 or more condition and we hv to execute only one that time we use branchig.
+6. and operator try to find false condition.
+7. !== operator,typeof.
+9. getElementsByclassname return Array of element.
+10. when we have no. of property and value that time we use object variable as a key value pair.
+8. function add(a,b){
+    return a + b;
+}

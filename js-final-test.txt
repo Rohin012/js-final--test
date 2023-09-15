@@ -1,0 +1,5 @@
+1. The object is used when the multiple properties and value of an item.
+2. The loop is used when the same condition is repeatedely perform for one operation.
+3. if we have a two or more condition and we want execute one at a time that time we used code branching.
+4. Array ForEach() method returns a complete array/ all item of Array.
+5. Array find () method returns the first object of array on which we hv to perform operation. 

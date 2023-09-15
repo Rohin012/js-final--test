@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayDate</title>
+</head>
+<body><p id="day"></p>
+    <div id="time"></div>
+    <script>
+        const today = new Date();
+        const day = today.getDay();
+        const daylist = ['Sunday','Monday','Tuesday','Wendnesday','Tuesday','Friday','Saturday'];
+        document.getElementById('day').innerHTML= `Today is : ${daylist[day]} `;
+        let hour = today.getHours();
+        const minut = today.getMinutes();
+        const second = today.getSeconds();
+        let prepend = (hour >= 12)? 'pm':'am';
+        document.getElementById('time').innerText =` Current time :  ${hour}${prepend}: ${minut}: ${second}.`;
+    </script>
+</body>
+</html>
